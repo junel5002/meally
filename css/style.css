@@ -19,7 +19,7 @@
 .back-to-top {
     position: fixed;
     display: none;
-    right: 20px; 
+    right: 20px;
     bottom: 20px;
     z-index: 99;
 }
@@ -89,6 +89,7 @@
     transition: background-color 0.3s ease;
     border: none;
     cursor: pointer;
+    margin-left: auto; /* Ensure it aligns to the right */
 }
 
 .btn-signup:hover {
@@ -153,11 +154,21 @@
     .sticky-top.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     .navbar-dark .navbar-brand img {
         max-height: 45px;
+    }
+
+    .signup-container {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .btn-signup {
+        font-size: 12px;
+        padding: 8px 16px;
     }
 }
 
@@ -199,7 +210,7 @@
 .section-title {
     position: relative;
     display: inline-block;
-    font-size: 24px; 
+    font-size: 24px;
 }
 
 .section-title::before {
@@ -276,11 +287,11 @@
     }
 
     .navbar-dark .navbar-nav .nav-link {
-        font-size: 13px; 
+        font-size: 13px;
     }
 
     .hero-header {
-        background-size: contain; 
+        background-size: contain;
     }
 
     .footer .btn.btn-social {
@@ -289,14 +300,14 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
     .section-title {
         font-size: 18px;
     }
 
     .navbar-dark .navbar-nav .nav-link {
         font-size: 12px;
-        padding: 8px 0; 
+        padding: 8px 0;
     }
 
     .footer .btn.btn-link {
@@ -305,6 +316,21 @@
 
     .back-to-top {
         right: 10px;
-        bottom: 10px; 
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn-signup {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 10px;
+    }
+
+    .footer .btn.btn-link {
+        font-size: 12px;
     }
 }
